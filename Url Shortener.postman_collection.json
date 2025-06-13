@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "25b8ca0d-0057-44d7-896f-ed6dfc006a05",
+		"name": "Url Shortener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20581499"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\": \"http://nepalii.com\",\r\n    \"expireInMinutes\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/url-shortener",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"url-shortener"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http://nepalii.com\",\r\n    \"expireInMinutes\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E"
+				}
+			]
+		},
+		{
+			"name": "get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/url-shortener",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"url-shortener"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"id\": \"abb2d19d-00ce-4043-b9cf-052e7170baff\",\r\n        \"originalUrl\": \"http://bibek.com\",\r\n        \"shortCode\": \"aWRhYmIyZDE5ZC0wMGNlLTQwNDMtYjljZi0wNTJlNzE3MGJhZmY\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T00:14:42.420894\"\r\n    },\r\n    {\r\n        \"id\": \"c8339a3e-22b2-493f-ac64-1102e6e8f6cd\",\r\n        \"originalUrl\": \"http://nepal.com\",\r\n        \"shortCode\": \"aWRjODMzOWEzZS0yMmIyLTQ5M2YtYWM2NC0xMTAyZTZlOGY2Y2Q\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T00:17:04.577451\"\r\n    },\r\n    {\r\n        \"id\": \"6b13ca54-647e-42cc-9104-eb3f9e05e791\",\r\n        \"originalUrl\": \"http://nepali.com\",\r\n        \"shortCode\": \"aWQ2YjEzY2E1NC02NDdlLTQyY2MtOTEwNC1lYjNmOWUwNWU3OTE\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T00:26:18.224337\"\r\n    },\r\n    {\r\n        \"id\": \"dcfa3bd5-c407-4e10-9035-cd1aecd92e87\",\r\n        \"originalUrl\": \"http://nepalii.com\",\r\n        \"shortCode\": \"aWRkY2ZhM2JkNS1jNDA3LTRlMTAtOTAzNS1jZDFhZWNkOTJlODc\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T00:30:52.712435\"\r\n    },\r\n    {\r\n        \"id\": \"23e747af-4c79-42e6-a09d-1c48a73d831a\",\r\n        \"originalUrl\": \"http://nepalii.com\",\r\n        \"shortCode\": \"aWQyM2U3NDdhZi00Yzc5LTQyZTYtYTA5ZC0xYzQ4YTczZDgzMWE\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T00:33:41.398764\"\r\n    },\r\n    {\r\n        \"id\": \"37dd92c3-1eaf-48a3-b482-54a9f3f7486e\",\r\n        \"originalUrl\": \"http://nepalii.com\",\r\n        \"shortCode\": \"aWQzN2RkOTJjMy0xZWFmLTQ4YTMtYjQ4Mi01NGE5ZjNmNzQ4NmU\",\r\n        \"visitCount\": 5,\r\n        \"expirationDate\": \"2025-06-13T00:38:52.027566\"\r\n    },\r\n    {\r\n        \"id\": \"4b4a41bc-38b5-4c42-9e48-e0e13d3b89ca\",\r\n        \"originalUrl\": \"http://nepalii.com\",\r\n        \"shortCode\": \"aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E\",\r\n        \"visitCount\": 1,\r\n        \"expirationDate\": \"2025-06-13T00:54:21.032791\"\r\n    },\r\n    {\r\n        \"id\": \"17263f3e-1be7-4267-baef-368fc4d32a5c\",\r\n        \"originalUrl\": \"http://hamropatro.com\",\r\n        \"shortCode\": \"aWQxNzI2M2YzZS0xYmU3LTQyNjctYmFlZi0zNjhmYzRkMzJhNWM\",\r\n        \"visitCount\": 0,\r\n        \"expirationDate\": \"2025-06-13T01:01:22.699001\"\r\n    },\r\n    {\r\n        \"id\": \"54736527-1a4d-4521-88c7-319fae077901\",\r\n        \"originalUrl\": \"http://hamropatro.com\",\r\n        \"shortCode\": \"aWQ1NDczNjUyNy0xYTRkLTQ1MjEtODhjNy0zMTlmYWUwNzc5MDE\",\r\n        \"visitCount\": 2,\r\n        \"expirationDate\": \"2025-06-13T00:56:40.408900\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "get by short code",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/url-shortener/get-originalurl/aWQ1NDczNjUyNy0xYTRkLTQ1MjEtODhjNy0zMTlmYWUwNzc5MDE",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"url-shortener",
+						"get-originalurl",
+						"aWQ1NDczNjUyNy0xYTRkLTQ1MjEtODhjNy0zMTlmYWUwNzc5MDE"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get by short code",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener/get-originalurl/aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener",
+								"get-originalurl",
+								"aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"http://nepalii.com\""
+				}
+			]
+		},
+		{
+			"name": "get by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/url-shortener/get-by-id/54736527-1a4d-4521-88c7-319fae077901",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"url-shortener",
+						"get-by-id",
+						"54736527-1a4d-4521-88c7-319fae077901"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get by short code",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener/get-originalurl/aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener",
+								"get-originalurl",
+								"aWQ0YjRhNDFiYy0zOGI1LTRjNDItOWU0OC1lMGUxM2QzYjg5Y2E"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"http://nepalii.com\""
+				},
+				{
+					"name": "get by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener/get-by-id/54736527-1a4d-4521-88c7-319fae077901",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener",
+								"get-by-id",
+								"54736527-1a4d-4521-88c7-319fae077901"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"id\": \"54736527-1a4d-4521-88c7-319fae077901\",\r\n    \"originalUrl\": \"http://hamropatro.com\",\r\n    \"shortCode\": \"aWQ1NDczNjUyNy0xYTRkLTQ1MjEtODhjNy0zMTlmYWUwNzc5MDE\",\r\n    \"visitCount\": 2,\r\n    \"expirationDate\": \"2025-06-13T00:56:40.408900\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/url-shortener/dcfa3bd5-c407-4e10-9035-cd1aecd92e87",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"url-shortener",
+						"dcfa3bd5-c407-4e10-9035-cd1aecd92e87"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"originalUrl\": \"http.bibek.com\",\r\n    \"expireInMinutes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/url-shortener/get-by-id/54736527-1a4d-4521-88c7-319fae077901",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"url-shortener",
+								"get-by-id",
+								"54736527-1a4d-4521-88c7-319fae077901"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\r\n    \"id\": \"54736527-1a4d-4521-88c7-319fae077901\",\r\n    \"originalUrl\": \"http://hamropatro.com\",\r\n    \"shortCode\": \"aWQ1NDczNjUyNy0xYTRkLTQ1MjEtODhjNy0zMTlmYWUwNzc5MDE\",\r\n    \"visitCount\": 2,\r\n    \"expirationDate\": \"2025-06-13T00:56:40.408900\"\r\n}"
+				}
+			]
+		}
+	]
+}
